@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjectionWithUnity.repositoryTests", "DepencyInjectionWithUnity.Tests\DepencyInjectionWithUnity.repositoryTests.csproj", "{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6D4A5266-6136-4EBC-823A-58C8B2D999DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{97464FE0-1F7A-43A5-A801-FDEB79700332}"
@@ -23,9 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjectionWithUnity.d
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A5657292-9559-47BE-A357-C02696DB9D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjection.domain.Tests", "DepencyInjection.domain.Tests\DepencyInjection.domain.Tests.csproj", "{47F62C2C-565B-488A-88FF-9FE8FDAC94CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjection.domain.Tests", "Tests\DepencyInjection.domain.Tests\DepencyInjection.domain.Tests.csproj", "{47F62C2C-565B-488A-88FF-9FE8FDAC94CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjection.facade.Tests", "DepencyInjection.facade.Tests\DepencyInjection.facade.Tests.csproj", "{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjection.facade.Tests", "Tests\DepencyInjection.facade.Tests\DepencyInjection.facade.Tests.csproj", "{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjectionWithUnity.repositoryTests", "Tests\DepencyInjectionWithUnity.Tests\DepencyInjectionWithUnity.repositoryTests.csproj", "{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78D36533-E5F4-4FEC-92AB-402232676D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78D36533-E5F4-4FEC-92AB-402232676D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78D36533-E5F4-4FEC-92AB-402232676D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,12 +61,15 @@ Global
 		{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7} = {A5657292-9559-47BE-A357-C02696DB9D3E}
 		{78D36533-E5F4-4FEC-92AB-402232676D52} = {97464FE0-1F7A-43A5-A801-FDEB79700332}
 		{428DFEA6-B6FE-44A8-933F-6894E79E2C55} = {6D4A5266-6136-4EBC-823A-58C8B2D999DD}
 		{B212C5E4-D419-4C85-AF73-100A4405E30E} = {6D4A5266-6136-4EBC-823A-58C8B2D999DD}
@@ -78,5 +77,6 @@ Global
 		{C1A02ED6-C1B0-468C-9AC0-CF1325A68B5E} = {6D4A5266-6136-4EBC-823A-58C8B2D999DD}
 		{47F62C2C-565B-488A-88FF-9FE8FDAC94CA} = {A5657292-9559-47BE-A357-C02696DB9D3E}
 		{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B} = {A5657292-9559-47BE-A357-C02696DB9D3E}
+		{F489C09B-DF7F-4071-9B3B-7E6F8F1990D7} = {A5657292-9559-47BE-A357-C02696DB9D3E}
 	EndGlobalSection
 EndGlobal

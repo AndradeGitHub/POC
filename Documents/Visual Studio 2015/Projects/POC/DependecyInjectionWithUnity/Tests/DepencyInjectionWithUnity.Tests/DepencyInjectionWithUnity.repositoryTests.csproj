@@ -109,15 +109,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.domain.model\DepencyInjectionWithUnity.domain.model.csproj">
+    <ProjectReference Include="..\..\DepencyInjectionWithUnity.domain.model\DepencyInjectionWithUnity.domain.model.csproj">
       <Project>{c1a02ed6-c1b0-468c-9ac0-cf1325a68b5e}</Project>
       <Name>DepencyInjectionWithUnity.domain.model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.domain.repository\DepencyInjectionWithUnity.domain.repository.csproj">
+    <ProjectReference Include="..\..\DepencyInjectionWithUnity.domain.repository\DepencyInjectionWithUnity.domain.repository.csproj">
       <Project>{b212c5e4-d419-4c85-af73-100a4405e30e}</Project>
       <Name>DepencyInjectionWithUnity.domain.repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.infrastructure\DepencyInjectionWithUnity.infrastructure.csproj">
+    <ProjectReference Include="..\..\DepencyInjectionWithUnity.infrastructure\DepencyInjectionWithUnity.infrastructure.csproj">
       <Project>{2ff28406-5626-4c69-89b1-33bdafd7c0fb}</Project>
       <Name>DepencyInjectionWithUnity.infrastructure</Name>
     </ProjectReference>

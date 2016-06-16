@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47F62C2C-565B-488A-88FF-9FE8FDAC94CA}</ProjectGuid>
+    <ProjectGuid>{B6A4B89D-DF07-43DC-9E1F-28B933D38E3B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DepencyInjection.domain.Tests</RootNamespace>
-    <AssemblyName>DepencyInjection.domain.Tests</AssemblyName>
+    <RootNamespace>DepencyInjection.facade.Tests</RootNamespace>
+    <AssemblyName>DepencyInjection.facade.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,13 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -57,25 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UserDomainTest.cs" />
+    <Compile Include="UserFacadeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.domain.model\DepencyInjectionWithUnity.domain.model.csproj">
+    <ProjectReference Include="..\..\DepencyInjectionWithUnity.application\DepencyInjectionWithUnity.application.csproj">
+      <Project>{78d36533-e5f4-4fec-92ab-402232676d52}</Project>
+      <Name>DepencyInjectionWithUnity.application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DepencyInjectionWithUnity.domain.model\DepencyInjectionWithUnity.domain.model.csproj">
       <Project>{c1a02ed6-c1b0-468c-9ac0-cf1325a68b5e}</Project>
       <Name>DepencyInjectionWithUnity.domain.model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.domain.repository\DepencyInjectionWithUnity.domain.repository.csproj">
-      <Project>{b212c5e4-d419-4c85-af73-100a4405e30e}</Project>
-      <Name>DepencyInjectionWithUnity.domain.repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.domain\DepencyInjectionWithUnity.domain.csproj">
-      <Project>{428dfea6-b6fe-44a8-933f-6894e79e2c55}</Project>
-      <Name>DepencyInjectionWithUnity.domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DepencyInjectionWithUnity.infrastructure\DepencyInjectionWithUnity.infrastructure.csproj">
-      <Project>{2ff28406-5626-4c69-89b1-33bdafd7c0fb}</Project>
-      <Name>DepencyInjectionWithUnity.infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
