@@ -1,0 +1,7 @@
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\bin\Debug\EntityFramework_Unity.comum.entidade.dll
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\bin\Debug\EntityFramework_Unity.comum.entidade.pdb
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\bin\Debug\EntityFramework.dll
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\bin\Debug\EntityFramework.xml
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\obj\Debug\EntityFramework_Unity.comum.entidade.dll
+C:\Users\ERON\Desktop\EntityFramework_Unity\EntityFramework_Unity.comum.entidade\obj\Debug\EntityFramework_Unity.comum.entidade.pdb
