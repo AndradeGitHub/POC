@@ -1,0 +1,53 @@
+﻿@model MvcApplication3Razor.Models.testeRazor
+
+@{
+    ViewBag.Title = "Index Razor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+
+@using (Html.BeginForm()) {
+    <div>
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.UserName)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Password)
+            </div>
+
+            <p>
+                <input type="submit" value="Index Razor" />
+            </p>
+
+        </fieldset>
+    </div>
+}
+
+@*@foreach (var item in IndexRazor)
+{
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+        <td>
+            @item.UserName
+        </td>
+        <td>
+            @item.Password
+        </td>
+    </tr>
+}*@
+
+</table>
+

@@ -1,0 +1,8 @@
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\bin\Debug\MvcApplication3Razor.Tests.dll.config
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\bin\Debug\MvcApplication3Razor.Tests.dll
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\bin\Debug\MvcApplication3Razor.Tests.pdb
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\bin\Debug\MvcApplication3Razor.dll
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\bin\Debug\MvcApplication3Razor.pdb
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\obj\Debug\MvcApplication3Razor.Tests.dll
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor.Tests\obj\Debug\MvcApplication3Razor.Tests.pdb

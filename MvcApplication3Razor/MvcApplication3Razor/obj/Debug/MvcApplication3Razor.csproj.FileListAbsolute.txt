@@ -1,0 +1,5 @@
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor\bin\MvcApplication3Razor.dll
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor\bin\MvcApplication3Razor.pdb
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor\obj\Debug\ResolveAssemblyReference.cache
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor\obj\Debug\MvcApplication3Razor.dll
+C:\Andre\Sistemas\MvcApplication3Razor\MvcApplication3Razor\obj\Debug\MvcApplication3Razor.pdb
