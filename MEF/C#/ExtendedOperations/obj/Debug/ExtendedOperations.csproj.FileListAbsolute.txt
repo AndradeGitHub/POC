@@ -1,0 +1,5 @@
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\Extensions\ExtendedOperations.dll
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\Extensions\ExtendedOperations.pdb
+C:\Users\ERON\Desktop\MEF\C#\ExtendedOperations\obj\Debug\ExtendedOperations.csprojResolveAssemblyReference.cache
+C:\Users\ERON\Desktop\MEF\C#\ExtendedOperations\obj\Debug\ExtendedOperations.dll
+C:\Users\ERON\Desktop\MEF\C#\ExtendedOperations\obj\Debug\ExtendedOperations.pdb

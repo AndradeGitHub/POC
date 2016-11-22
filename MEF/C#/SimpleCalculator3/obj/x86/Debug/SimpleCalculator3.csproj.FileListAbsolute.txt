@@ -1,0 +1,4 @@
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\bin\Debug\SimpleCalculator3.exe
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\bin\Debug\SimpleCalculator3.pdb
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.exe
+C:\Users\ERON\Desktop\MEF\C#\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.pdb
