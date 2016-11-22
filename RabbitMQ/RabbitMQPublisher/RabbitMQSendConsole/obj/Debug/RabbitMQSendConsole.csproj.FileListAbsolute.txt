@@ -1,0 +1,1 @@
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\RabbitMQSendConsole.exe.config

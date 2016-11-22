@@ -1,0 +1,9 @@
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\RabbitMQReceiverConsole.exe.config
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\RabbitMQReceiverConsole.exe
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\RabbitMQReceiverConsole.pdb
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\log4net.dll
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\RabbitMQ.Client.dll
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\bin\Debug\log4net.xml
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\obj\Debug\RabbitMQReceiverConsole.exe
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\obj\Debug\RabbitMQReceiverConsole.pdb
+C:\Sistemas\POC\RabbitMQ\RabbitMQConsumer\RabbitMQReceiverConsole\obj\Debug\RabbitMQReceiverConsole.csprojResolveAssemblyReference.cache
