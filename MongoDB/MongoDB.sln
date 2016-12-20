@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodb.console", "mongodb.console\mongodb.console.csproj", "{61565A3E-8F53-4BCF-AF53-7A00F33AB67C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{1970709C-1517-4ADC-A2BE-1B4864515114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{57108FA8-4F87-401C-89CD-EBBBBC5168D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodb.infrastructure", "mongodb.infrastructure\mongodb.infrastructure.csproj", "{85561616-631E-42B5-A115-480B174CD2E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0A5E66DC-1A20-4E8F-9D62-DE940B277102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodb.domain.model", "mongodb.domain.model\mongodb.domain.model.csproj", "{59A0361D-00F7-4512-975C-ABCC8635E017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodb.domain.repository", "mongodb.domain.repository\mongodb.domain.repository.csproj", "{610582D3-A82A-4678-9874-60519D4D7F5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61565A3E-8F53-4BCF-AF53-7A00F33AB67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61565A3E-8F53-4BCF-AF53-7A00F33AB67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61565A3E-8F53-4BCF-AF53-7A00F33AB67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61565A3E-8F53-4BCF-AF53-7A00F33AB67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85561616-631E-42B5-A115-480B174CD2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85561616-631E-42B5-A115-480B174CD2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85561616-631E-42B5-A115-480B174CD2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85561616-631E-42B5-A115-480B174CD2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A0361D-00F7-4512-975C-ABCC8635E017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A0361D-00F7-4512-975C-ABCC8635E017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A0361D-00F7-4512-975C-ABCC8635E017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A0361D-00F7-4512-975C-ABCC8635E017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610582D3-A82A-4678-9874-60519D4D7F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610582D3-A82A-4678-9874-60519D4D7F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610582D3-A82A-4678-9874-60519D4D7F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610582D3-A82A-4678-9874-60519D4D7F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61565A3E-8F53-4BCF-AF53-7A00F33AB67C} = {1970709C-1517-4ADC-A2BE-1B4864515114}
+		{85561616-631E-42B5-A115-480B174CD2E0} = {57108FA8-4F87-401C-89CD-EBBBBC5168D7}
+		{59A0361D-00F7-4512-975C-ABCC8635E017} = {0A5E66DC-1A20-4E8F-9D62-DE940B277102}
+		{610582D3-A82A-4678-9874-60519D4D7F5D} = {0A5E66DC-1A20-4E8F-9D62-DE940B277102}
+	EndGlobalSection
+EndGlobal
