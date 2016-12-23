@@ -5,7 +5,7 @@ using System.ComponentModel.Composition.Hosting;
 
 using mef.infrastructure.mef.interfaces;
 
-namespace mef.infrastructure.mef
+namespace mef.infrastructure.mef.invoke
 {
     public class PluginInvoke
     {

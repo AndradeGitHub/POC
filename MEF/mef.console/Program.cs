@@ -9,12 +9,12 @@ namespace mef.console
     {
         static void Main(string[] args)
         {
-            string path = "C:\\Sistemas\\POC\\MEF\\Pluginstt";
+            string path = "C:\\Sistemas\\POC\\MEF\\Plugins";
 
             try
             {
                 var pluginFactory = new PluginFactory();
-                pluginFactory.Fabricate(path);                         
+                pluginFactory.CreatePlugin(path);                         
             }
             catch(Exception ex)
             {
