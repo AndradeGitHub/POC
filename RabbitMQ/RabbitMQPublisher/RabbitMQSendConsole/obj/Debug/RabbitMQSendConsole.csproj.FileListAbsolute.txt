@@ -1,1 +1,9 @@
 C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\RabbitMQSendConsole.exe.config
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\RabbitMQSendConsole.exe
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\RabbitMQSendConsole.pdb
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\RabbitMQ.Client.dll
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\obj\Debug\RabbitMQSendConsole.csprojResolveAssemblyReference.cache
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\obj\Debug\RabbitMQSendConsole.exe
+C:\Sistemas\POC\RabbitMQ\RabbitMQPublisher\RabbitMQSendConsole\obj\Debug\RabbitMQSendConsole.pdb

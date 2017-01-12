@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
+//using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
 
 using Newtonsoft.Json;
@@ -16,25 +14,50 @@ namespace RabbitMQPublisher
     {
         static void Main(string[] args)
         {                     
-            ConnectionFactory connectionFactory = new ConnectionFactory();            
-            connectionFactory.Endpoint.HostName = "amqp://10.44.13.74:5672";
-            //connectionFactory.HostName = "localhost";
-            connectionFactory.VirtualHost = "/AxPedidoCentral";
-            connectionFactory.UserName = "RabbitMQPOC";
-            connectionFactory.Password = "teste";            
+            ConnectionFactory connectionFactory = new ConnectionFactory();
 
-            BasicPublish(connectionFactory);            
+            //LOCAL        
+            //connectionFactory.Uri = "amqp://10.44.12.213:5672";
+            ////connectionFactory.Endpoint.HostName = "amqp://10.44.12.213:5672";
+            ////connectionFactory.HostName = "localhost";
+            //connectionFactory.VirtualHost = "/AxPedidoCentral";
+            //connectionFactory.UserName = "RabbitMQAxPedidoCentral";
+            //connectionFactory.Password = "axpedidocentral";
+
+            //DEV
+            //connectionFactory.Uri = "amqp://10.33.170.162:5672";            
+            //connectionFactory.VirtualHost = "/AxPedidoCentral";
+            //connectionFactory.UserName = "RabbitMQAxPedidoCentral_DEV";
+            //connectionFactory.Password = "axpedidocentral_dev";
+
+            //HOM
+            connectionFactory.Uri = "amqp://10.33.170.162:5672";           
+            connectionFactory.VirtualHost = "AxPedidoCentral_HOM";
+            connectionFactory.UserName = "RabbitMQAxPedidoCentral_HOM";
+            connectionFactory.Password = "axpedidocentral_hom";
+
+            //for (int i = 0; i < 50000; i++)
+            //{
+                BasicPublish(connectionFactory);
+            //}
         }
 
         private static void BasicPublish(ConnectionFactory connectionFactory)
         {
             try
             {
-                //string exchange = "ExchangeAxPedido";
-                //string queue = "QueueBradescoAxPedidoCentral";
+                //LOCAL
+                //string exchange = "ExchangeAxPedidoCentralBradesco_LOCAL";
+                //string queue = "QueueAxPedidoCentraBradescoAutorizacao_LOCAL";
+                //string queue = "QueueAxPedidoCentraBradescoConfirmacao_LOCAL";
 
-                string exchange = "ExchangeAxPedidoCentralBradesco_LOCAL1";
-                string queue = "QueueTeste1";
+                //DEV
+                //string exchange = "ExchangeAxPedidoCentralBradesco_LOCAL1";
+                //string queue = "QueueTeste1";
+
+                //HOM
+                string exchange = "ExchangeAxPedidoCentralGenerali_HOM";
+                string queue = "QueueAxPedidoCentralGeneraliConfirmacao_HOM";
 
                 using (IConnection connection = connectionFactory.CreateConnection())
                 {
@@ -42,19 +65,19 @@ namespace RabbitMQPublisher
                     {
                         //model.ExchangeDeclare(exchange, ExchangeType.Direct, true, false);
                         //model.QueueDeclare(queue, true, false, false, null);
-                        model.QueueBind(queue, exchange, "", new Dictionary<string, object>());                        
+                        model.QueueBind(queue, exchange, "", new Dictionary<string, object>());
 
-                        for (int i = 0; i < 5000; i++)
+                        IBasicProperties basicProperties = model.CreateBasicProperties();
+                        basicProperties.ContentType = "application/json";
+                        basicProperties.Persistent = true;
+                        basicProperties.DeliveryMode = 2;
+
+                        for (int i = 0; i < 50000; i++)
                         {
                             string message = string.Concat("Hello!! + ", i);
 
                             var json = JsonConvert.SerializeObject(message);
                             
-                            IBasicProperties basicProperties = model.CreateBasicProperties();
-                            basicProperties.ContentType = "application/json";
-                            basicProperties.Persistent = true;
-                            basicProperties.DeliveryMode = 2;
-
                             model.BasicPublish(exchange, "", false, basicProperties, Encoding.UTF8.GetBytes(json));                            
                         }
 

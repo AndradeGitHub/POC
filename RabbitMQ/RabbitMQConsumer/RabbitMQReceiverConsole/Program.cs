@@ -19,9 +19,26 @@ namespace RabbitMQConsole1
         static void Main(string[] args)
         {            
             var connectionFactory = new ConnectionFactory();
-            connectionFactory.HostName = "localhost";
-            connectionFactory.UserName = "RabbitMQPOC";
-            connectionFactory.Password = "teste";
+
+            //LOCAL        
+            //connectionFactory.Uri = "amqp://10.44.12.213:5672";
+            ////connectionFactory.Endpoint.HostName = "amqp://10.44.12.213:5672";
+            ////connectionFactory.HostName = "localhost";
+            //connectionFactory.VirtualHost = "/AxPedidoCentral";
+            //connectionFactory.UserName = "RabbitMQAxPedidoCentral";
+            //connectionFactory.Password = "axpedidocentral";
+
+            //DEV
+            //connectionFactory.Uri = "amqp://10.33.170.162:5672";
+            //connectionFactory.VirtualHost = "/AxPedidoCentral";
+            //connectionFactory.UserName = "RabbitMQAxPedidoCentral_DEV";
+            //connectionFactory.Password = "axpedidocentral_dev";
+
+            //HOM
+            connectionFactory.Uri = "amqp://10.33.170.162:5672";
+            connectionFactory.VirtualHost = "AxPedidoCentral_HOM";
+            connectionFactory.UserName = "RabbitMQAxPedidoCentral_HOM";
+            connectionFactory.Password = "axpedidocentral_hom";
 
             //EventingBasicConsumer_LISTENER(connectionFactory);
             EventingBasicConsumer_LISTENER1(connectionFactory);
@@ -62,8 +79,22 @@ namespace RabbitMQConsole1
             try
             {
                 string messageContent = string.Empty;
-                string queueName = "QueueBradescoAxPedidoCentral";
-                string exchangeName = "ExchangeBradescoAxPedidoCentral";
+
+                //LOCAL
+                //string exchange = "ExchangeAxPedidoCentralBradesco_LOCAL";
+                ////string queue = "QueueAxPedidoCentraBradescoAutorizacao_LOCAL";
+                //string queue = "QueueAxPedidoCentraBradescoConfirmacao_LOCAL";
+
+                //DEV
+                //string exchange = "ExchangeAxPedidoCentralBradesco_LOCAL1";
+                //string queue = "QueueTeste1";
+
+                //HOM
+                string exchange = "ExchangeAxPedidoCentralGenerali_HOM";
+                string queue = "QueueAxPedidoCentralGeneraliConfirmacao_HOM";
+
+                //string queueName = "QueueBradescoAxPedidoCentral";
+                //string exchangeName = "ExchangeBradescoAxPedidoCentral";
 
                 const int NUMBER_OF_WORKROLES = 3;
 
@@ -79,7 +110,7 @@ namespace RabbitMQConsole1
                         lock (channel)
                         {
                             //channel.QueueDeclare(queueName, true, false, false, null);
-                            channel.QueueBind(queueName, exchangeName, "", new Dictionary<string, object>());
+                            channel.QueueBind(queue, exchange, "", new Dictionary<string, object>());
 
                             var consumer = new EventingBasicConsumer(channel);
                             consumer.ConsumerTag = Guid.NewGuid().ToString();
@@ -97,9 +128,9 @@ namespace RabbitMQConsole1
                             };
 
                             //Registra o consumidor no RabbitMQ
-                            channel.BasicConsume(queueName, noAck: false, consumer: consumer);
+                            channel.BasicConsume(queue, noAck: false, consumer: consumer);
 
-                            channel.QueueUnbind(queueName, exchangeName, "", new Dictionary<string, object>());
+                            channel.QueueUnbind(queue, exchange, "", new Dictionary<string, object>());
                         }
                     });
                 }
