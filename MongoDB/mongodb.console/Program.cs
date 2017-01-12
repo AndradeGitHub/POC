@@ -23,16 +23,18 @@ namespace mongodb.console
             _repositoryBase = new RepositoryBase(_connectionString, _databaseName);
 
             _repository = RepositoryFactory.CreateRepository<EntityTeste, Repository<EntityTeste>>(_repositoryBase.CreateDataBase(), "Col_Teste");
-            _repositoryCustom = RepositoryFactory.CreateRepositoryCustom<EntityTeste, RepositoryColTeste<EntityTeste>>(_repositoryBase.CreateDataBase(), "Col_Teste");
+            _repositoryCustom = RepositoryFactory.CreateRepositoryCustom<EntityTeste, RepositoryColTeste<EntityTeste>>(_repositoryBase.CreateDataBase(), "Col_Teste");            
 
             GetAll();
-            InsertData();
-            UpdateData();
-            GetById();            
+
+            int id = GetLastData();
+            InsertData(id);
+            UpdateData(id);
+            GetById(id);            
 
             GetCustom();
 
-            DeleteData();
+            DeleteData(id);
         }
 
         private static void GetAll()
@@ -40,35 +42,40 @@ namespace mongodb.console
             var result = _repository.GetAll();
         }
 
-        private static void GetById()
+        private static int GetLastData()
         {
-            var result = _repository.GetById(3);
+            return _repositoryCustom.GetLastData();
+        }        
+
+        private static void GetById(int id)
+        {
+            var result = _repository.GetById(id);
         }
 
-        private static void InsertData()
+        private static void InsertData(int id)
         {
             EntityTeste entity = new EntityTeste();
-            entity.Id = 3;
+            entity.Id = id;
             entity.Log = "Teste Log";
             entity.Date = DateTime.Now;
 
             Task.WaitAll(_repository.Insert(entity));
         }
 
-        private static void UpdateData()
+        private static void UpdateData(int id)
         {
             EntityTeste entity = new EntityTeste();
-            entity.Id = 3;
+            entity.Id = id;
             entity.Log = "Teste Log1";
             entity.Date = DateTime.Now;
 
             Task.WaitAll(_repository.Update(entity));
         }
 
-        private static void DeleteData()
+        private static void DeleteData(int id)
         {
             EntityTeste entity = new EntityTeste();
-            entity.Id = 3;
+            entity.Id = id;
 
             Task.WaitAll(_repository.Delete(entity));
         }

@@ -22,5 +22,10 @@ namespace mongodb.domain.repository
         {            
             return _collection.Find(x => x.Log == entity.Log, null).ToListAsync<TEntity>().Result;
         }
+
+        public int GetLastData()
+        {
+            return (_collection.Find(new BsonDocument(), null).SortByDescending(x => x.Id).FirstOrDefault().Id) +1;
+        }        
     }
 }
